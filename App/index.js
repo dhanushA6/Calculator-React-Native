@@ -161,6 +161,7 @@ const App = () => {
           <Button text="0" onPress={() => handleTap("number", "0")} />
           <Button text="." onPress={() => handleTap("number", ".")} />
           <Button text="=" theme="accent" onPress={() => handleTap("equal")} />
+          <Button text="/" theme="accent" onPress={() => handleTap("number", "/")} />
         </Row>
       </SafeAreaView>
 

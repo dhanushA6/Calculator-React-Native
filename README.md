@@ -3,8 +3,7 @@ Here’s a `README.md` file template you can use for your Calculator React Nativ
 ---
 
 # Calculator App
-![Main Calculator Interface](./assets/images/screenshot_main.jpg)
-![Calculation History](./assets/images/screenshot_history.jpg) 
+
 
 A simple, intuitive calculator application built using **React Native**. This app provides basic arithmetic operations along with the ability to maintain a history of calculations.
 
@@ -17,11 +16,10 @@ A simple, intuitive calculator application built using **React Native**. This ap
 
 ## Screenshots
 ### Main Calculator Interface
-![Main Calculator](./screenshot_main.jpg)
+<img src="./screenshot_main.jpg" alt="Main Calculator" width="300"/>
 
 ### Calculation History
-![Calculation History](./screenshot_history.jpg)
-
+<img src="./screenshot_history.jpg" alt="Calculation History" width="300"/>
 ## Technologies Used
 ### Frontend
 - **React Native**: To build the mobile interface of the app.

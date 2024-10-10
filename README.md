@@ -89,8 +89,8 @@ Ensure you have the following installed on your machine:
 ## How It Works
 
 1. Perform basic arithmetic operations using the calculator interface.
-2. All calculations are evaluated using JavaScript’s `Function()` constructor to ensure security.
-3. The backend stores the last 10 calculations in a MongoDB database and serves it through the `/history` endpoint.
+2. All calculations are evaluated using JavaScript’s `Calculation()` constructor to ensure security.
+3. The backend stores the  calculations in a MongoDB database and serves it through the `/history` endpoint.
 4. The frontend fetches this history and displays it in a sidebar accessible from the calculator.
 
 

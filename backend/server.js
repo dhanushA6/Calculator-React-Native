@@ -39,14 +39,23 @@ app.use(cors());
 app.post('/calculate', async (req, res) => {
     const { expression } = req.body;
     console.log(expression);
-    try {
+    
+    try { 
+
+    
+
+        // Check if the expression contains a division by zero
+        if (/\/\s*0/.test(expression)) {
+            return res.status(400).json({ error: "inf" });
+        }
+
         // Evaluate the expression securely using Function
         const result = new Function('return ' + expression)();
 
         // Check if the result is a valid number
         if (isNaN(result)) {
             return res.status(400).json({ error: "Invalid expression" });
-        }
+        } 
 
         // Save the calculation to the database
         const calculation = new Calculation({ expression, result });
@@ -58,6 +67,7 @@ app.post('/calculate', async (req, res) => {
         res.status(400).json({ error: "Expression Invalid" });
     }
 });
+
 
 // Endpoint to get the last 10 calculations
 app.get('/history', async (req, res) => {

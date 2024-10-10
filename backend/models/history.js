@@ -1,4 +1,4 @@
-// backend/models/Calculation.js
+// backend/models/history.js
 const mongoose = require('mongoose');
 
 const calculationSchema = new mongoose.Schema({

@@ -27,7 +27,7 @@ const CalculationSchema = new mongoose.Schema({
     timestamp: { type: Date, default: Date.now },
 });
 
-const Calculation = mongoose.model('Calculation', CalculationSchema);
+const Calculation = mongoose.model('history', CalculationSchema);
 
 // Middleware to parse the body of POST requests
 app.use(bodyParser.json());

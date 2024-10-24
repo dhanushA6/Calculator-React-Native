@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { StyleSheet, Text, View, StatusBar, SafeAreaView, TouchableOpacity } from "react-native";
-import Row from "./components/Row"; // Assuming Row component is correctly implemented
-import Button from "./components/Button"; // Assuming Button component is correctly implemented
+import Row from "./components/Row"; 
+import Button from "./components/Button"; 
 import HistoryDrawer from './components/HistoryDrawer';
 
 const MAX_EXPRESSION_LENGTH = 100;

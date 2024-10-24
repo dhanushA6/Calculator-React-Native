@@ -1,10 +1,5 @@
-Here’s a `README.md` file template you can use for your Calculator React Native project on GitHub:
-
----
 
 # Calculator App
-
-
 A simple, intuitive calculator application built using **React Native**. This app provides basic arithmetic operations along with the ability to maintain a history of calculations.
 
 ## Features
@@ -71,7 +66,7 @@ Ensure you have the following installed on your machine:
 4. **Run the Backend**:
     ```bash
     cd backend
-    node index.js
+    node server.js
     ```
     
 5. **Run the Frontend**:

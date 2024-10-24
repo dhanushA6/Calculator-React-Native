@@ -2,10 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config(); // Add this line to load .env variables
+require('dotenv').config(); 
 
 const app = express();
-const port = process.env.PORT || 5000; // Use the port from the .env file or default to 5000
+const port = process.env.PORT || 5000; 
 
 // Connect to MongoDB using the URI from the .env file
 const mongoURI = process.env.MONGO_URI;
@@ -42,16 +42,9 @@ app.post('/calculate', async (req, res) => {
     
     try { 
 
-    
-
-        // Check if the expression contains a division by zero
-        if (/\/\s*0/.test(expression)) {
-            return res.status(400).json({ error: "inf" });
-        }
-
         // Evaluate the expression securely using Function
         const result = new Function('return ' + expression)();
-
+ 
         // Check if the result is a valid number
         if (isNaN(result)) {
             return res.status(400).json({ error: "Invalid expression" });
